@@ -334,9 +334,9 @@ elif selected_page == "About":
         {"name": "Marco", "role": "Team Lead", "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.","photo_url": "photos/marco.png",},
         {"name": "Surya", "role": "Lead Developer", "bio": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.","photo_url": "photos/surya.png",},
         {"name": "Parminder", "role": "Designer", "bio": "Nulla facilisi. Vivamus euismod, odio nec bibendum ullamcorper, ligula dui scelerisque neque.","photo_url": "photos/gill.png",},
-        {"name": "Barinder", "role": "Car Specialist", "bio": "Nulla facilisi. Vivamus euismod, odio nec bibendum ullamcorper, ligula dui scelerisque neque.","photo_url": "photos/bari.png",},
-        {"name": "Manpreet", "role": "Security Specialist ", "bio": "Nulla facilisi. Vivamus euismod, odio nec bibendum ullamcorper, ligula dui scelerisque neque.","photo_url": "photos/mano.png",}, # Add more team members as needed
-        {"name": "Tanishq", "role": "Thark Specialist", "bio": "Nulla facilisi. Vivamus euismod, odio nec bibendum ullamcorper, ligula dui scelerisque neque.","photo_url": "photos/tanu.png",},
+        {"name": "Barinder", "role": "Tech Specialist", "bio": "Nulla facilisi. Vivamus euismod, odio nec bibendum ullamcorper, ligula dui scelerisque neque.","photo_url": "photos/bari.png",},
+        {"name": "Manpreet", "role": "Management Specialist ", "bio": "Nulla facilisi. Vivamus euismod, odio nec bibendum ullamcorper, ligula dui scelerisque neque.","photo_url": "photos/mano.png",}, # Add more team members as needed
+        {"name": "Tanishq", "role": " Testing Specialist", "bio": "Nulla facilisi. Vivamus euismod, odio nec bibendum ullamcorper, ligula dui scelerisque neque.","photo_url": "photos/tanu.png",},
     ]
 
     for member in team_members:
