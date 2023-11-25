@@ -23,7 +23,7 @@ selected_page = st.sidebar.radio("Select a Page", ["Forcast", "Weather Analytics
 if selected_page == "Forcast":
         
 
-        ot = pd.read_csv("/comox pred full.csv")
+        ot = pd.read_csv("comox pred full.csv")
         ot['Date/Time'] = pd.to_datetime(ot['Date/Time'], format="%d-%m-%Y")
 
         st.title('Into The Weather &nbsp;&nbsp;🌦️')
@@ -131,7 +131,7 @@ elif selected_page == "Weather Analytics":
         st.markdown('<style>div.block-container{padding-top:1rem;}</style>',unsafe_allow_html=True)
 
 
-        df = pd.read_csv("/daily_weather_data_v6.csv")
+        df = pd.read_csv("daily_weather_data_v6.csv")
 
 
         df['size_mean'] = (df['Mean Temp (°C)'].abs().round().astype(int))
