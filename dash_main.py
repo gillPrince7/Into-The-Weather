@@ -18,12 +18,12 @@ st.set_page_config(page_title="Weather!!!", page_icon=":bar_chart:", layout="wid
 # Sidebar for navigation
 
 st.sidebar.header("Weather Dashboard")
-selected_page = st.sidebar.radio("Select a Page", ["Forcast", "Weather Analytics", "Extreme"])
+selected_page = st.sidebar.radio("Select a Page", ["Forcast", "Weather Analytics", "Extreme","About"])
 
 if selected_page == "Forcast":
         
 
-        ot = pd.read_csv("comox pred full.csv")
+        ot = pd.read_csv("/Users/princegill/Documents/VSCode/AIP/comox pred full.csv")
         ot['Date/Time'] = pd.to_datetime(ot['Date/Time'], format="%d-%m-%Y")
 
         st.title('Into The Weather &nbsp;&nbsp;🌦️')
@@ -131,7 +131,7 @@ elif selected_page == "Weather Analytics":
         st.markdown('<style>div.block-container{padding-top:1rem;}</style>',unsafe_allow_html=True)
 
 
-        df = pd.read_csv("daily_weather_data_v6.csv")
+        df = pd.read_csv("/Users/princegill/Documents/VSCode/AIP/Data and other/Daily dataset/daily_weather_data_v6.csv")
 
 
         df['size_mean'] = (df['Mean Temp (°C)'].abs().round().astype(int))
@@ -312,4 +312,46 @@ elif selected_page == "Weather Analytics":
 elif selected_page == "Extreme":  
 
      st.title('❄️ Extreme Weather Analysis &nbsp;&nbsp;🌊')
-     
+
+
+
+elif selected_page == "About":  
+
+    st.title("About Our Team")
+
+    st.write(
+        "Welcome to the About page! Here, we'll introduce you to the amazing individuals who make up our team."
+    )
+
+    st.header("Meet the Team",divider="grey")
+    st.write("---")
+    st.header("",divider="rainbow")
+    st.write(" ")
+    st.write(" ")
+
+    team_members = [
+        {"name": "Marco", "role": "Team Lead", "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.","photo_url": "/Users/princegill/Documents/VSCode/AIP/Team/marco.jpeg",},
+        {"name": "Surya", "role": "Lead Developer", "bio": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.","photo_url": "/Users/princegill/Documents/VSCode/AIP/Team/surya.jpeg",},
+        {"name": "Parminder", "role": "Designer", "bio": "Nulla facilisi. Vivamus euismod, odio nec bibendum ullamcorper, ligula dui scelerisque neque.","photo_url": "/Users/princegill/Documents/VSCode/AIP/Team/gill.jpeg",},
+        {"name": "Barinder", "role": "Car Specialist", "bio": "Nulla facilisi. Vivamus euismod, odio nec bibendum ullamcorper, ligula dui scelerisque neque.","photo_url": "/Users/princegill/Documents/VSCode/AIP/Team/bari.jpeg",},
+        {"name": "Manpreet", "role": "Security Specialist ", "bio": "Nulla facilisi. Vivamus euismod, odio nec bibendum ullamcorper, ligula dui scelerisque neque.","photo_url": "/Users/princegill/Documents/VSCode/AIP/Team/mano.jpeg",}, # Add more team members as needed
+        {"name": "Tanishq", "role": "Thark Specialist", "bio": "Nulla facilisi. Vivamus euismod, odio nec bibendum ullamcorper, ligula dui scelerisque neque.","photo_url": "/Users/princegill/Documents/VSCode/AIP/Team/tanu.jpeg",},
+    ]
+
+    for member in team_members:
+        col1, col2 = st.columns((2))
+        with col1:
+            st.subheader(member["name"])
+
+            st.write(f"**Role:** {member['role']}")
+            st.write(member["bio"])
+    
+        
+        with col2:
+            st.image(member["photo_url"], caption=f"{member['name']} - {member['role']}", use_column_width=False, width=150,)
+
+        # Add more information as needed, such as images, social media links, etc.
+
+        #st.write("---")  # Add a separator between team members
+        
+        st.subheader(" ",divider='rainbow')
