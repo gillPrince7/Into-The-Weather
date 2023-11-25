@@ -330,12 +330,12 @@ elif selected_page == "About":
     st.write(" ")
 
     team_members = [
-        {"name": "Marco", "role": "Team Lead", "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.","photo_url": "/Users/princegill/Documents/VSCode/AIP/Team/marco.jpeg",},
-        {"name": "Surya", "role": "Lead Developer", "bio": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.","photo_url": "/Users/princegill/Documents/VSCode/AIP/Team/surya.jpeg",},
-        {"name": "Parminder", "role": "Designer", "bio": "Nulla facilisi. Vivamus euismod, odio nec bibendum ullamcorper, ligula dui scelerisque neque.","photo_url": "/Users/princegill/Documents/VSCode/AIP/Team/gill.jpeg",},
-        {"name": "Barinder", "role": "Car Specialist", "bio": "Nulla facilisi. Vivamus euismod, odio nec bibendum ullamcorper, ligula dui scelerisque neque.","photo_url": "/Users/princegill/Documents/VSCode/AIP/Team/bari.jpeg",},
-        {"name": "Manpreet", "role": "Security Specialist ", "bio": "Nulla facilisi. Vivamus euismod, odio nec bibendum ullamcorper, ligula dui scelerisque neque.","photo_url": "/Users/princegill/Documents/VSCode/AIP/Team/mano.jpeg",}, # Add more team members as needed
-        {"name": "Tanishq", "role": "Thark Specialist", "bio": "Nulla facilisi. Vivamus euismod, odio nec bibendum ullamcorper, ligula dui scelerisque neque.","photo_url": "/Users/princegill/Documents/VSCode/AIP/Team/tanu.jpeg",},
+        {"name": "Marco", "role": "Team Lead", "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.","photo_url": "/photos/marco.jpeg",},
+        {"name": "Surya", "role": "Lead Developer", "bio": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.","photo_url": "/photos/surya.jpeg",},
+        {"name": "Parminder", "role": "Designer", "bio": "Nulla facilisi. Vivamus euismod, odio nec bibendum ullamcorper, ligula dui scelerisque neque.","photo_url": "/photos/gill.jpeg",},
+        {"name": "Barinder", "role": "Car Specialist", "bio": "Nulla facilisi. Vivamus euismod, odio nec bibendum ullamcorper, ligula dui scelerisque neque.","photo_url": "/photos/bari.jpeg",},
+        {"name": "Manpreet", "role": "Security Specialist ", "bio": "Nulla facilisi. Vivamus euismod, odio nec bibendum ullamcorper, ligula dui scelerisque neque.","photo_url": "/photos/mano.jpeg",}, # Add more team members as needed
+        {"name": "Tanishq", "role": "Thark Specialist", "bio": "Nulla facilisi. Vivamus euismod, odio nec bibendum ullamcorper, ligula dui scelerisque neque.","photo_url": "/photos/tanu.jpeg",},
     ]
 
     for member in team_members:
